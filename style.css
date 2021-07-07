@@ -1,0 +1,133 @@
+  @import url('https://fonts.googleapis.com/css2?family=Uchen&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Festive&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Fuggles&display=swap');
+  *{
+       box-sizing: border-box;
+margin: 0;   
+color: black;
+font-family: 'Uchen', serif;
+}
+   ul, ul:hover{
+       list-style-type: none;
+padding:0;
+   }
+   #navbar{
+       position: fixed;
+       top:0;
+       left:0;
+       right:0;
+       background-color: rgb(231, 76, 60);
+        height: 4rem;
+   }
+   
+
+  #navbar ul, ul:hover{
+       justify-content: flex-end;
+       justify-self: stretch;
+       align-items: center;
+/* height: 3rem; */
+       margin: 0;
+height: 100%;
+   }
+   li:hover{
+       height: 100%;
+       background-color: #f49f0a;
+   }
+  nav a{
+       text-decoration: none;
+       color: white;
+       padding: 1rem;
+       height: 100%;
+       
+   }
+
+   .flex{
+       display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   #contact img{
+        width:1.6rem;
+    }
+
+    #welcome-section{
+        height: 100vh;
+        background-color: #ffb627;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1{
+        /* color:rgb(231, 76, 60); */
+        color: white;
+        font-size: 5rem;
+/* font-family: 'Uchen', serif; */
+    }
+
+    #welcome-section p{
+        color:rgb(231, 76, 60);
+        font-size: 7rem;
+/* font-family: 'Festive', cursive; */
+font-family: 'Fuggles', cursive;
+    }
+
+    #projects{
+    background-color: #ffc971;
+    height: 100vh;
+    text-align: center;
+flex-direction: column;
+justify-content: center;
+    }
+
+    #projects h3{
+        padding: 2rem;
+    }
+.project-tile-container{
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+    .project-tile{
+        width: 23vw;
+        height: auto;
+        /* padding: 1rem; */
+ border: 3px solid rgb(231, 76, 60); 
+border-radius: 5px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+       background-color: rgb(231, 76, 60);
+       margin:8px;
+min-width:240px
+    }
+.project-tile p{
+    margin:0;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+    .project-tile img{
+        width: 100%;
+       
+    }
+
+    #contact{
+        height: 40vh;
+        background-color: #ff9505;
+        flex-direction: column;
+    }
+
+    #contact img{
+        margin-right: 1.5rem;
+    }
+
+    @media screen and (max-width:700px) {
+        *{
+            font-size: 11px;
+        }
+        .project-tile {
+                min-width: 187px;
+        }
+    }
